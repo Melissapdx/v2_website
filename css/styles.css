@@ -22,13 +22,31 @@
  p{
  	font-size:1rem;
  	line-height:1.5;
+ 	width:495px;
  }
  /*Navigation*/
-
+ .nav{
+ 	margin-right:20px;
+ }
+ .nav li{
+ 	padding:10px;
+ }
  /*Content*/
+ .container-nav{
+ 	display:flex;
+ }
  .container{
  	display:flex;
+ 	flex-direction:column;
  	align-items:baseline;
  }
+ footer{
+ 	text-align:center;
+ }
  /*Images*/
+ .image{
+ 	width:750px;
+ 	height:453px;
+ }
+
  /*Media Queries*/
