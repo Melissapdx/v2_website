@@ -9,24 +9,28 @@
  	text-decoration: none;
  	color: black;
  }
+ p,.intro,footer,.contact{
+ 	width:495px;
+ }
 
  /*Typography*/
- h1,h2,p{
+ h1,h2,h4,p{
  	font-family:'Lato', sans-serif;
  }
- h1{
+ h1,h2,h4{
  	font-weight:400;
+ }
+ h1{
  	font-size:3em;
  }
  h2{
- 	font-weight:400;
  	font-size:1rem;
  	line-height:1.5;
  }
+
  p{
  	font-size:1rem;
  	line-height:1.5;
- 	width:495px;
  }
  /*Navigation*/
  .nav{
@@ -47,19 +51,25 @@
  }
  .intro{
  	height:400px;
- 	width:495px;
  	
-
+ }
+ .social{
+ 	height:40px;
  }
  footer{
+ 	display:block;
+ 	margin:0 auto;
+ }
+.contact{
  	text-align:center;
  }
+
  /*Images*/
  .image{
  	width:750px;
  	height:453px;
  	margin:90px 0px 90px 0px;
- 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ 	box-shadow:0 0 4px 1px rgba(0, 0, 0, 0.2);
  }
 
  /*Media Queries*/
