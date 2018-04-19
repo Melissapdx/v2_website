@@ -12,10 +12,23 @@
  p,.intro,.contact{
  	width:495px;
  }
+ section{
+ 	margin-top:20px;
+ }
 
  /*Typography*/
  h1,h2,h4,p,a{
- 	font-family:'Lato', sans-serif;
+	font-family:'Lato', sans-serif;
+	opacity: 0;
+	-webkit-animation: appear 1s ease-out forwards;
+	-moz-animation: appear 1s ease-out forwards;
+	-o-animation: appear 1s ease-out forwards;
+	animation: appear 1s ease-out forwards;
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	-o-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+
  }
  h1,h2,h4{
  	font-weight:400;
@@ -29,8 +42,17 @@
  }
 
  p{
- 	font-size:1rem;
- 	line-height:1.5;
+	font-size:1rem;
+	line-height:1.5;
+	 opacity: 0;
+	-webkit-animation: appear 1s ease-out forwards;
+	-moz-animation: appear 1s ease-out forwards;
+	-o-animation: appear 1s ease-out forwards;
+	animation: appear 1s ease-out forwards;
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	-o-animation-delay: 0.4s;
+	animation-delay: 0.4s;
  }
  /*Navigation*/
  .nav{
@@ -52,7 +74,6 @@
  }
  .intro{
  	height:400px;
- 	
  }
  .social{
  	height:40px;
@@ -78,5 +99,41 @@
  	margin:90px 0px 90px 0px;
  	box-shadow:0 0 4px 1px rgba(0, 0, 0, 0.2);
  }
+/* Animations */
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
  /*Media Queries*/
