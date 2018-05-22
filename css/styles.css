@@ -5,10 +5,11 @@
  }
   a{
  	text-decoration: none;
- 	color: black;
+ 	color: #333447;
  }
  p,.intro,.contact{
- 	width:495px;
+ 	width:400px;
+  color: #333447;
  }
  section{
  	margin-top:20px;
@@ -30,6 +31,7 @@
  }
  h1,h2,h4{
  	font-weight:400;
+  color: #333447;
  }
  h1{
  	font-size:3em;
@@ -69,13 +71,13 @@
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 10px 10px;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .header .logo {
@@ -195,17 +197,17 @@
  .yellow {
   background:#f1cb5a;
  }
- .pink{
+ .pink{ 
   background:#f57e9b;
  }
 
- .teal{
+ .teal {
   background:#77dacff7;
  }
  /*Images*/
- .image{
- 	width:750px;
- 	height:453px;
+
+ .image {
+ 	width:450px;
  	margin:90px 0px 90px 0px;
  	box-shadow:0 0 4px 1px rgba(0, 0, 0, 0.2);
  }
@@ -227,10 +229,8 @@ a.hvr-underline-reveal:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ef32d9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 4px;
+  background:#f57e9b;  
+  height: 2px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
   -webkit-transition-property: transform;
@@ -280,10 +280,21 @@ a.hvr-underline-reveal:hover:before, a.hvr-underline-reveal:focus:before, a.hvr-
   }
 }
  /*Media Queries*/
- @media only screen and (min-width: 768px) {
+
+ @media only screen and (min-width: 800px) {
+
+ /* Base Styles */
+
     body {
       padding-top:100px;
     }
+
+    p,.intro, .contact{
+      width:495px;
+    }
+
+ /* Navigation*/
+
     .container-nav {
       display:flex;
       justify-content:center;
@@ -308,5 +319,9 @@ a.hvr-underline-reveal:hover:before, a.hvr-underline-reveal:focus:before, a.hvr-
     .header .menu-icon {
       display: none;
     }
-
+  /*Images*/
+    .image {
+      width:700px;
+      margin:90px 0px 90px 0px;
+    }
  }
